@@ -1,0 +1,210 @@
+package td1;
+
+
+	/*class Ex1 {
+	    public static void main(String[] args) {
+	        System.out.println("Je suis un génie");
+	        System.out.println();   // ligne vide
+	        System.out.println("Je sais écrire un programme \"JAVA\"");}*/
+/*Résultat affiché :
+	 *   50                          (25+25 = addition)
+	 *   2525                        ("25" est un texte -> collage)
+	 *   Mohamed1
+	 *   La moyennede la classe=10.52  
+	 */
+	/*class Ex2 {
+	    public static void main(String[] args) {
+	        float moyenne = 10.5f;
+	        System.out.println(25 + 25);
+	        System.out.println("25" + 25);
+	        System.out.println("Mohamed" + 1);
+	        System.out.println("La moyenne" + "de la classe=" + moyenne + 2);
+	    }
+	}
+	 */
+	
+
+	/* 
+	 * EXERCICE 3 : Trace d'exécution (suivre les variables pas à pas)
+	 * Trace  :
+	 *   a = 100
+	 *   b = a + 200          -> b = 300
+	 *   c = a * b            -> c = 30000
+	 *   d = (c + b) / a      -> (30000+300)/100 = 303
+	 *   e = d % 10           -> reste de 303/10 = 3
+	 *   f = ((a+c)*(d-e))*2  -> (30100 * 300) * 2 = 18060000
+	 *   f /= 1000            -> f = 18060
+	 *   a += f               -> a = 100 + 18060 = 18160
+	 *
+	 * Résultat affiché  :
+	 *   a=18160
+	 *   b=300
+	 *    c=30000      
+	 *    d=303
+	 *    e=3
+	 *    f=18060
+	 */
+	/*class Ex4 {
+	    public static void main(String[] args) {
+	        String texte = args[0];
+	        int n = Integer.parseInt(args[1]);
+	 
+	        for (int i = 0; i < n; i++) {
+	            System.out.println(texte);
+	        }
+	    }
+	}*/
+	/*class Ex5 {
+	    public static void main(String[] args) {
+	        int n = Integer.parseInt(args[0]);
+	        long resultat = 1;
+	 
+	        for (int i = 1; i <= n; i++) {
+	            resultat = resultat * i;
+	        }
+	 
+	        System.out.println("La factorielle de " + n + " est " + resultat);
+	    }
+	}*/
+	/*class Ex6 {
+	    public static void main(String[] args) {
+	        int max = Integer.parseInt(args[0]);   
+	        for (int i = 1; i < 6; i++) {
+	            int nombre = Integer.parseInt(args[i]);
+	            if (nombre > max) {
+	                max = nombre;
+	            }
+	        }
+	 
+	        System.out.println("Le maximum est = " + max);
+	    }
+	}*/
+	/*class Ex7 {
+	    public static void main(String[] args) {
+	        int n = Integer.parseInt(args[0]);
+	        boolean premier = true;      
+	 
+	        if (n < 2) {
+	            premier = false;
+	        }
+	 
+	        for (int i = 2; i < n; i++) {
+	            if (n % i == 0) {        
+	                premier = false;
+	            }
+	        }
+	 
+	        if (premier) {
+	            System.out.println(n + " est un nombre premier");
+	        } else {
+	            System.out.println(n + " n'est pas un nombre premier");
+	        }
+	    }
+	}*/
+	/*class Ex8 {
+	    public static void main(String[] args) {
+	        int n = Integer.parseInt(args[0]);
+	 
+	        for (int ligne = 1; ligne <= n; ligne++) {
+	            for (int etoile = 1; etoile <= ligne; etoile++) {
+	                System.out.print("*");   // print : reste sur la même ligne
+	            }
+	            System.out.println();        // on passe à la ligne suivante
+	        }
+	    }
+	}*/
+	/*class Ex9 {
+	    public static void main(String[] args) {
+	        int x = Integer.parseInt(args[0]);
+	        int n = Integer.parseInt(args[1]);
+	        long resultat = 1;
+	 
+	        for (int i = 1; i <= n; i++) {
+	            resultat = resultat * x;
+	        }
+	 
+	        System.out.println(x + " puissance " + n + " = " + resultat);
+	    }
+	}*/
+
+
+
+
+
+package td2;
+
+/*class Temps {
+    
+    private int heure, minute, seconde;
+ 
+    
+    Temps(int heure) {
+        this.heure = heure;
+    }
+ 
+    
+    Temps(int heure, int minute) {
+        this(heure);              
+        this.minute = minute;
+    }
+ 
+    
+    Temps(int heure, int minute, int seconde) {
+        this(heure, minute);      
+        this.seconde = seconde;
+    }
+ 
+   
+    void affiche() {
+        System.out.println("Il est : " + heure + " heures " + minute
+                + " minutes " + seconde + " secondes");
+    }
+ 
+    public static void main(String[] args) {
+        Temps t = new Temps(10);          
+        t.affiche();
+ 
+        t = new Temps(10, 12);            
+        t.affiche();
+ 
+        t = new Temps(10, 12, 45);        
+        t.affiche();
+    }
+}*/
+/*Résultat affiché :
+	    x = 0, y = 1, z = 1
+	   x = 0, y = 2, z = 1
+	    x = 1, y = 2, z = 2
+	 
+	class XYZ {
+	    private int x;
+	    private static int y;     
+	    private int z;
+	 
+	    XYZ() {
+	        x = 0;
+	        y++;
+	        z = y;
+	    }
+	 
+	    XYZ(int x) {
+	        this.x = x;
+	        y++;
+	        z = y;
+	    }
+	 
+	    void affiche() {
+	        System.out.println("x = " + x + ", y = " + y + ", z = " + z);
+	    }
+	}
+	 
+	class TestXYZ {
+	    public static void main(String[] args) {
+	        XYZ a = new XYZ();
+	        a.affiche();
+	        XYZ b = new XYZ(1);
+	        a.affiche();
+	        b.affiche();
+	    }
+	}
+*/
